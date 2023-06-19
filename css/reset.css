@@ -38,9 +38,8 @@ input {
 
 html {
     font-size: var(--base-font-size);
+    -webkit-top-highlight-color: transparent;
 }
-
-/* 17:24 */
 
 html,
 body {

@@ -82,3 +82,26 @@
     --alpha-5: var(--alpha-5-light);
     --overlay-bg: var(--overlay-bg-light);
 }
+
+body {
+    color: var(--on-background);
+    height: 300vh;
+    display: flex;
+    background: var(--background);
+    min-height: 100vh;
+    min-height: 100dvh;
+    font-weight: var(--weight-regular);
+    line-height: 20px;
+    padding-block: var(--header-height) 16px;
+    letter-spacing: .2px;
+    flex-direction: column;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: var(--radius-pill);
+    background-color: var(--surface-variant);
+}
