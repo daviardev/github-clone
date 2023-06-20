@@ -87,6 +87,7 @@ body {
     color: var(--on-background);
     height: 300vh;
     display: flex;
+    font-size: var(--label-1);
     background: var(--background);
     min-height: 100vh;
     min-height: 100dvh;
@@ -103,5 +104,118 @@ body {
 
 ::-webkit-scrollbar-thumb {
     border-radius: var(--radius-pill);
+    background-color: var(--surface-variant);
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin-inline: auto;
+    padding-inline: 16px;
+}
+
+.text-error {
+    color: var(--error);
+}
+
+/* Header */
+.skip-to-content {
+    top: 4px;
+    left: 4px;
+    color: var(--background);
+    height: 56px;
+    opacity: 0;
+    display: grid;
+    z-index: 5;
+    position: fixed;
+    font-size: var(--label-1);
+    font-weight: var(--weight-medium);
+    place-items: center;
+    border-radius: var(--radius-8);
+    pointer-events: none;
+    outline-offset: 2px;
+    padding-inline: 24px;
+    background-color: var(--on-background);
+}
+
+.skip-to-content:focus-visible {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.logo {
+    fill: var(--on-background);
+    display: inline;
+}
+
+.material-symbols-rounded {
+    width: 1em;
+    height: 1em;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    ;
+}
+
+.icon-btn {
+    width: 48px;
+    height: 48px;
+    border: 1px solid var(--surface-variant-outline);
+    display: grid;
+    min-width: 48px;
+    transition: var(--transition-short);
+    place-items: center;
+    border-radius: var(--radius-circle);
+    background-color: var(--surface-variant);
+    transition-property: background-color, border-color;
+}
+
+.icon-btn:where(:hover, :focus-visible):not(:active) {
+    border-color: var(--surface-variant-outline-hover);
+    background-color: var(--surface-variant-hover);
+}
+
+.icon-btn .material-symbols-rounded {
+    color: var(--on-background);
+}
+
+.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--header-height);
+    display: flex;
+    z-index: 4;
+    position: fixed;
+    transition: background-color var(--transition-short);
+    align-items: center;
+}
+
+.header.active {
+    background-color: var(--surface);
+}
+
+.header .container {
+    gap: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.search-box .leading-icon
+.search-btn, .label-1 {
+    position: relative;
+    overflow: hidden;
+    flex-grow: 1;
+    border-radius: var(--radius-pill);
+}
+
+.search-field {
+    height: 48px;
+    outline: none;
+    line-height: 48px;
+    border-radius: inherit;
+    padding-inline: 16px 64px;
     background-color: var(--surface-variant);
 }

@@ -1,5 +1,2 @@
 import './style.css'
-
-import { $ } from './src/lib/dom'
-
-$('#app')
+import './js/theme'
