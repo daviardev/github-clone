@@ -85,7 +85,6 @@
 
 body {
     color: var(--on-background);
-    height: 300vh;
     display: flex;
     font-size: var(--label-1);
     background: var(--background);
@@ -271,4 +270,73 @@ body {
 [data-theme='dark'] .theme-btn .moon-icon,
 [data-theme='light'] .theme-btn .sun-icon {
     display: none;
+}
+
+.avatar-skeleton {
+    width: 160px;
+    height: 160px;
+    border-radius: var(--radius-circle);
+    background-color: var(--alpha-10);
+}
+
+.title-skeleton,
+.text-skeleton {
+    border-radius: var(--radius-pill);
+}
+
+.title-skeleton {
+    width: 100%;
+    height: 24px;
+    max-width: 180px;
+    background-color: var(--alpha-10);
+}
+
+.text-skeleton {
+    background-color: var(--alpha-5);
+    height: 16px;   
+}
+
+.profile-skeleton .title-skeleton {
+    margin-block: 24px;
+}
+
+.profile-skeleton .text-skeleton {
+    margin-block-start: 12px;
+}
+
+.profile-skeleton .text-1 {
+    width: 55%;
+}
+
+.profile-skeleton .text-3 {
+    width: 70%;
+}
+
+.skeleton {
+    position: relative;
+    overflow: hidden;
+}
+
+.skeleton::before {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(90deg, transparent, var(--alpha-5), transparent);
+    animation: skeleton-loading 1.5s linear infinite;
+
+}
+
+/* Animation skeleton */
+
+@keyframes skeleton-loading {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(200%);
+    }
 }
