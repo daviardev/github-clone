@@ -43,10 +43,10 @@
     --surface-light: hsl(223, 100%, 96%);
     --on-surface-light: hsl(222, 11%, 40%);
     --on-surface-2-light: hsl(222, 11%, 36%);
-    --surface-variant-light: hsl(213, 13%, 16%);
+    --surface-variant-light: hsl(210, 32%, 85%);
     --surface-variant-hover-light: hsl(221, 26%, 79%);
     --on-surface-variant-light: hsl(223, 14%, 35%);
-    --surface-variant-outline-light: hsl(213, 13%, 16%);
+    --surface-variant-outline-light: hsl(210, 32%, 85%);
     --surface-variant-outline-hover-light: hsl(223, 18%, 75%);
     --error-light: hsl(0, 54%, 49%);
     --error-alpha-10-light: hsla(0, 54%, 49%, 0.1);
