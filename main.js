@@ -27,7 +27,7 @@ window.addEventListener('scroll', () => {
   header.classList[window.scrollY > 50 ? 'add' : 'remove']('active')
 })
 
-searchToggler.addEventListener('click', () => {
+searchToggler.addEventListener('click', function () {
   header.classList.toggle('search-active')
   isExpanded = !isExpanded
   this.setAttribute('aria-expanded', isExpanded)
