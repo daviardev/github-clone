@@ -337,6 +337,10 @@ body {
 
 }
 
+.img-holder {
+    aspect-ratio: var(--width); /* 1:01:02 */
+}
+
 /* Animation skeleton */
 
 @keyframes skeleton-loading {
